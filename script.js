@@ -9,3 +9,9 @@ function addCounter() {
 	counter++;
 	counterElement.textContent = counter;
 }
+
+function startTimer() {
+    counter = 0;
+    counterElement.textContent = counter;
+	setInterval(addCounter, 1000);
+}
