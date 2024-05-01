@@ -21,3 +21,7 @@ function startTimer() {
 function pauseTimer() {
 	clearInterval(intervalId);
 }
+
+function resumeTimer(){
+    intervalId = setInterval(addCounter, 1000);
+}
