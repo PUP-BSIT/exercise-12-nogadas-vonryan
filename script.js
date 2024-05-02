@@ -42,3 +42,8 @@ function stopTimer() {
 	clearInterval(intervalId);
 	setButtonStates(false, true, true, true);
 }
+
+startButton.addEventListener("click", startTimer);
+pauseButton.addEventListener("click", pauseTimer);
+resumeButton.addEventListener("click", resumeTimer);
+stopButton.addEventListener("click", stopTimer);
