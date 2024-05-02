@@ -1,8 +1,8 @@
 let counterElement = document.querySelector("#counter");
 let startButton = document.querySelector("#start_button");
-let pauseButton = document.querySelector("#pauseButton");
+let pauseButton = document.querySelector("#pause_button");
 let resumeButton = document.querySelector("#resume_button");
-let stopButton = document.querySelector("#stopButton");
+let stopButton = document.querySelector("#stop_button");
 
 let counter = 0;
 let intervalId;
