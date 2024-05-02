@@ -40,4 +40,5 @@ button:hover {
 
 button:disabled {
     cursor: unset;
+    color: black;
 }
