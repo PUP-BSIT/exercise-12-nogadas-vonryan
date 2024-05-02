@@ -22,6 +22,12 @@ function pauseTimer() {
 	clearInterval(intervalId);
 }
 
-function resumeTimer(){
-    intervalId = setInterval(addCounter, 1000);
+function resumeTimer() {
+	intervalId = setInterval(addCounter, 1000);
+}
+
+function stopTimer() {
+	counter = 0;
+	counterElement.textContent = counter;
+	clearInterval(intervalId);
 }
