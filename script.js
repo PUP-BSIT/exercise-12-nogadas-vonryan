@@ -7,9 +7,13 @@ let stopButton = document.querySelector("#stop_button");
 let counter = 0;
 let intervalId;
 
+function setCounter(value) {
+	counterElement.textContent = value;
+}
+
 function addCounter() {
 	counter++;
-	counterElement.textContent = counter;
+	setCounter(counter);
 }
 
 function setButtonStates(start, pause, resume, stop) {
@@ -20,8 +24,7 @@ function setButtonStates(start, pause, resume, stop) {
 }
 
 function startTimer() {
-	counter = 0;
-	counterElement.textContent = counter;
+	setCounter(0);
 	intervalId = setInterval(addCounter, 1000);
 	setButtonStates(true, false, true, false);
 }
@@ -38,7 +41,7 @@ function resumeTimer() {
 
 function stopTimer() {
 	counter = 0;
-	counterElement.textContent = counter;
+	setCounter(counter);
 	clearInterval(intervalId);
 	setButtonStates(false, true, true, true);
 }
