@@ -2,10 +2,7 @@ body {
 	display: flex;
     justify-content: center;
 	align-items: center;
-    background-image: url("./assets/bulb_wallpaper.jpg");
-    background-color: #161616;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: #161616;;
     color: white;
 	height: 100vh;
 }
