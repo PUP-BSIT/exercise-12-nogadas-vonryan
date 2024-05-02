@@ -34,16 +34,16 @@ button {
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 button:disabled {
-    cursor: unset;
-    color: black;
+	cursor: unset;
+	color: black;
 }
 
 @media (max-width: 426px) {
-    .button-container {
-        flex-direction: column;
-    }
+	.button-container {
+		flex-direction: column;
+	}
 }

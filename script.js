@@ -1,19 +1,19 @@
-let counterElement = document.querySelector("#counter");
+let countElement = document.querySelector("#count");
 let startButton = document.querySelector("#start_button");
 let pauseButton = document.querySelector("#pause_button");
 let resumeButton = document.querySelector("#resume_button");
 let stopButton = document.querySelector("#stop_button");
 
-let counter = 0;
+let count = 0;
 let intervalId;
 
-function setCounter(value) {
-	counterElement.textContent = value;
+function setCount(value) {
+	countElement.textContent = value;
 }
 
-function addCounter() {
-	counter++;
-	setCounter(counter);
+function addCount() {
+	count++;
+	setCount(count);
 }
 
 function setButtonStates(start, pause, resume, stop) {
@@ -24,8 +24,8 @@ function setButtonStates(start, pause, resume, stop) {
 }
 
 function startTimer() {
-	setCounter(0);
-	intervalId = setInterval(addCounter, 1000);
+	setCount(0);
+	intervalId = setInterval(addCount, 1000);
 	setButtonStates(true, false, true, false);
 }
 
@@ -35,13 +35,13 @@ function pauseTimer() {
 }
 
 function resumeTimer() {
-	intervalId = setInterval(addCounter, 1000);
+	intervalId = setInterval(addCount, 1000);
 	setButtonStates(true, false, true, false);
 }
 
 function stopTimer() {
-	counter = 0;
-	setCounter(counter);
+	count = 0;
+	setCount(count);
 	clearInterval(intervalId);
 	setButtonStates(false, true, true, true);
 }
